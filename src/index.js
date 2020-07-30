@@ -1,14 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-import { Routes } from './routes/routes';
+import Home from './components/pages/Home';
+import CadastroVideo from './components/pages/CadastroVideo';
+import Pagina404 from './components/pages/Erro';
+
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <BrowserRouter>
+    <Switch>
+      <Route component={Home} path="/" exact/>
+      <Route component={CadastroVideo} path="/cadastro/video" />
+      <Route component={Pagina404}/>
+    </Switch>
+  </BrowserRouter>,
   document.getElementById('root')
 );
 
