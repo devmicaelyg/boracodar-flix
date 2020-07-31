@@ -7,9 +7,10 @@ const CadastroVideo = () => {
         <TemplatePages>
             <h1> Cadastro de video </h1>
             
-            <Link to="cadastro/categoria">
+            <Link to="/cadastro/categoria">
                 Cadastro de Categorias
             </Link>
+
         </TemplatePages>
       
     );
