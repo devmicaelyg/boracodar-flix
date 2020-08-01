@@ -41,8 +41,6 @@ const CadastroCategoria = () => {
   // ==========
 
   useEffect(() => {
-    console.log('Aló Brasel');
-
     setTimeout(() => {
       setCategory([
         ...category,
